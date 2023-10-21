@@ -1,0 +1,30 @@
+/* Add these styles to your CSS */
+@keyframes slideFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-left {
+    animation: slideFromLeft 1s ease-in-out forwards;
+}
+
+.slide-right {
+    animation: slideFromRight 1s ease-in-out forwards;
+}

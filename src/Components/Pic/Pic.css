@@ -1,0 +1,50 @@
+
+.center-contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
+  
+  .profile {
+    width: 400px;
+    height: 400px; 
+    border-radius: 50%;
+    background-color: #FF0080;
+    background: linear-gradient(150deg, #FFA500, #4B0082);
+    animation: gradientRotate 7s ease infinite;
+    transition: border-radius 0.5s ease;
+  }
+  @media (max-width: 767px) {
+    .profile {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+  
+  .profile {
+    border-radius: 45%;
+  }
+  
+  .pic {
+    width: 95%;
+    height: 95%;
+    background-image: url('../../assets/347268018_627107889329926_747911621725486710_n-2-removebg-preview-2.png');
+    background-size: cover;
+    border-radius: 50%;
+    animation: picFix 7s ease infinite;
+    position: relative;
+  }
+  @keyframes gradientRotate {
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+  }
+  
+  @keyframes picFix {
+    0%{transform: rotate(360deg)}
+    100%{transform: rotate(0deg)}
+  }
+  
